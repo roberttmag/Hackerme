@@ -1,0 +1,62 @@
+  
+   
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        overflow: hidden; /* Impede a barra de rolagem */
+    }
+
+    .carousel-item {
+        height: 100vh; /* Garante que o carrossel ocupe toda a altura da tela */
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1; /* Overlay em cima da imagem */
+    }
+
+    .carousel-item img {
+        position: relative;
+        z-index: 0; /* Imagem abaixo do overlay */
+        height: 100%; /* Garante que a imagem preencha o carrossel */
+        object-fit: cover; /* Corta a imagem para cobrir o carrossel */
+    }
+
+    #canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 20%;
+        pointer-events: none; 
+        z-index: 3; 
+    }
+    .carousel-caption {
+        text-align: center; /* Alinhamento do texto no centro */
+        z-index: 2; 
+        margin-bottom: 250px;
+        color: white; /* Cor do texto */
+        font-weight: 900; /* Fonte mais grossa */
+    }
+
+    /* Estilo específico para dispositivos móveis */
+    @media (max-width: 768px) {
+        .carousel-caption h1 {
+            font-size: 3.2rem; /* Tamanho ajustado para dispositivos móveis */
+        }
+
+        .subtitulo {
+            font-size: 1.5rem; /* Tamanho do subtítulo ajustado para dispositivos móveis */
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.8); /* Maior opacidade no overlay para melhor legibilidade */
+        }
+    }
