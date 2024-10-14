@@ -45,18 +45,21 @@
     }
 
     
-
-    /* Estilo específico para dispositivos móveis */
-    @media (max-width: 768px) {
+    @media (max-width: 375px) { /* Ajuste para a largura mais comum de iPhones */
         .carousel-caption h1 {
-            font-size: 3.2rem; /* Tamanho ajustado para dispositivos móveis */
+          font-size: 2.8rem; /* Ajuste o tamanho da fonte conforme necessário */
         }
-
+      
         .subtitulo {
-            font-size: 1.5rem; /* Tamanho do subtítulo ajustado para dispositivos móveis */
+          font-size: 1.3rem;
         }
-
+      
         .overlay {
-            background-color: rgba(0, 0, 0, 0.8); /* Maior opacidade no overlay para melhor legibilidade */
+          background-color: rgba(0, 0, 0, 0.85); /* Ajuste a opacidade conforme necessário */
         }
-    }
+      
+        /* Adicione mais estilos para ajustar o layout conforme necessário */
+        .carousel-caption {
+          padding: 20px; /* Adicione padding para criar espaço em torno do texto */
+        }
+      }
