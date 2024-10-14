@@ -1,11 +1,11 @@
     html, body {
         height: 100%;
         margin: 0;
-        overflow: hidden; /* Impede a barra de rolagem */
+        overflow: hidden; 
     }
 
     .carousel-item {
-        height: 100vh; /* Garante que o carrossel ocupe toda a altura da tela */
+        height: 100vh; 
     }
 
     .overlay {
@@ -15,15 +15,16 @@
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.7);
-        z-index: 1; /* Overlay em cima da imagem */
+        z-index: 1; 
     }
 
     .carousel-item img {
         position: relative;
-        z-index: 0; /* Imagem abaixo do overlay */
-        height: 100%; /* Garante que a imagem preencha o carrossel */
-        object-fit: cover; /* Corta a imagem para cobrir o carrossel */
+        z-index: 0; 
+        height: 100%; 
+        object-fit: cover; 
     }
+
 
     #canvas {
         position: absolute;
@@ -42,6 +43,8 @@
         color: white; /* Cor do texto */
         font-weight: 900; /* Fonte mais grossa */
     }
+
+    
 
     /* Estilo específico para dispositivos móveis */
     @media (max-width: 768px) {
